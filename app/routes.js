@@ -2,23 +2,23 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('Home page');
+  res.render('pages/home');
 });
 
 router.get('/about', (req, res) => {
-  res.send('About page');
+  res.render('pages/about');
 });
 
 router.get('/blog', (req, res) => {
-  res.send('Blog page');
+  res.render('pages/blog');
 });
 
 router.get('/projects', (req, res) => {
-  res.send('Projects page');
+  res.render('pages/project');
 });
 
 router.get('/contact', (req, res) => {
-  res.send('Contact page');
+  res.render('pages/project');
 });
 
 
