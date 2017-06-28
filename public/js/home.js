@@ -1,26 +1,33 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+function showNextSlide() {
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+};
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function showPrevSlide() {
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+};
+
+function showSlide(n) {
+
+};
+
+$(document).ready(() => {
+  var index = 0;
+  var slides = $(".slides").children();
+  var dots = $(".dots");
+
+  for (i = index + 1; i < slides.length; i++) {
+    slides.eq(i).hide();
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+
+  $(".prev").click(() => {
+    slides.eq(index).hide();
+    index = index > 0 ? --index : slides.length;
+    slides.eq(index).show();
+  });
+  $(".next").click(() => {
+    slides.eq(index).hide();
+    index = index < slides.length - 1 ? ++index : 0;
+    slides.eq(index).show();
+  });
+
+})
