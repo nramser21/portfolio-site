@@ -14,11 +14,11 @@ router.get('/blog', (req, res) => {
 });
 
 router.get('/projects', (req, res) => {
-  res.render('pages/project');
+  res.render('pages/projects');
 });
 
 router.get('/contact', (req, res) => {
-  res.render('pages/project');
+  res.render('pages/contact');
 });
 
 
