@@ -1,0 +1,79 @@
+body {
+  padding-top: 70px;
+  background: #000428; }
+
+.well {
+  background-color: rgba(75, 75, 75, 0.6);
+  border: none;
+  color: #A6400A; }
+  .well h1 {
+    font-family: 'Russo One', sans-serif; }
+  .well p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 150%; }
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #A6400A;
+  font-family: 'Russo One', sans-serif; }
+
+.navbar {
+  background-color: #A6400A;
+  border: none; }
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #828282;
+  font-family: 'Russo One', sans-serif; }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #A6400A;
+    background-color: #000428; }
+
+img {
+  border: 3px solid #A6400A;
+  border-radius: 10px; }
+  img:hover {
+    border-color: #000428; }
+
+.portfoilio img {
+  margin-top: 30px; }
+
+.divider {
+  height: 3px;
+  background-color: #828282; }
+
+.btn-primary {
+  background-color: #A6400A;
+  border-color: #A6400A;
+  color: #828282;
+  font-family: 'Russo One', sans-serif; }
+  .btn-primary:hover {
+    background-color: #000428;
+    border-color: #A6400A;
+    color: #A6400A; }
+
+.navbar-default .navbar-toggle {
+  border-color: #000428; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000428; }
+  .navbar-default .navbar-toggle:hover {
+    background-color: #000428;
+    border-color: #000428; }
+    .navbar-default .navbar-toggle:hover span {
+      background-color: #A6400A; }
+
+.icons div {
+  display: inline-block;
+  margin: 25px;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #A6400A;
+  border-radius: 50%;
+  text-align: center; }
+  .icons div i {
+    margin-top: 12px;
+    font-size: 150%; }
+  .icons div:hover {
+    background-color: #A6400A;
+    border-color: #000428; }

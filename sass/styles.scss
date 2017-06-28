@@ -1,0 +1,111 @@
+body {
+  padding-top: 70px;
+  background: #000428;
+  //background: -webkit-linear-gradient(to left, #000428 , #004e92);
+  //background: linear-gradient(to top, #000428 , #004e92);
+}
+
+.well {
+  background-color: rgba(75, 75, 75, 0.6);
+  border: none;
+  color: #A6400A;
+
+  h1 {
+    font-family: 'Russo One', sans-serif;
+  }
+
+  p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 150%;
+  }
+}
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #A6400A;
+  font-family: 'Russo One', sans-serif;
+}
+
+.navbar {
+  background-color: #A6400A;
+  border: none;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: rgb(130, 130, 130);
+  font-family: 'Russo One', sans-serif;
+
+  &:hover {
+    color: #A6400A;
+    background-color: #000428;
+  }
+}
+
+img {
+  border: 3px solid #A6400A;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: #000428;
+  }
+}
+
+.portfoilio img {
+  margin-top: 30px;
+}
+
+.divider {
+  height: 3px;
+  background-color: rgb(130, 130, 130);
+}
+
+.btn-primary {
+  background-color: #A6400A;
+  border-color: #A6400A;
+  color: rgb(130, 130, 130);
+  font-family: 'Russo One', sans-serif;
+
+  &:hover {
+    background-color: #000428;
+    border-color: #A6400A;
+    color: #A6400A;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #000428;
+
+  .icon-bar {
+    background-color: #000428;
+  }
+
+  &:hover {
+    background-color: #000428;
+    border-color: #000428;
+
+    span {
+      background-color: #A6400A;
+    }
+  }
+}
+
+.icons div {
+  display: inline-block;
+  margin: 25px;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #A6400A;
+  border-radius: 50%;
+  text-align: center;
+
+  i {
+    margin-top: 12px;
+    font-size: 150%;
+  }
+
+  &:hover {
+    background-color: #A6400A;
+    border-color: #000428;
+  }
+}
