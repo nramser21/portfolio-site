@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css",
     "dev": "nodemon server.js"
   },
   "repository": {

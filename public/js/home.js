@@ -22,12 +22,12 @@ $(document).ready(() => {
   $(".prev").click(() => {
     slides.eq(index).hide();
     index = index > 0 ? --index : slides.length;
-    slides.eq(index).show();
+    slides.eq(index).fadeIn("slow");
   });
   $(".next").click(() => {
     slides.eq(index).hide();
     index = index < slides.length - 1 ? ++index : 0;
-    slides.eq(index).show();
+    slides.eq(index).fadeIn("slow");
   });
 
 })
