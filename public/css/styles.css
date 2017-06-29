@@ -2,6 +2,7 @@ body {
   padding-top: 70px;
   background: #000428; }
 
+/* Modify Bootstrap styles */
 .well {
   background-color: rgba(75, 75, 75, 0.6);
   border: none;
@@ -78,6 +79,7 @@ img {
     background-color: #A6400A;
     border-color: #000428; }
 
+/* Home page styles */
 * {
   box-sizing: border-box; }
 
@@ -86,6 +88,10 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto; }
+
+.slides img {
+  height: 500px;
+  width: 100%; }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -110,6 +116,7 @@ img {
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
 
+/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -120,7 +127,7 @@ img {
   text-align: center; }
 
 /* The dots/bullets/indicators */
-.dot {
+.dots {
   cursor: pointer;
   height: 13px;
   width: 13px;
