@@ -130,10 +130,12 @@ img {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  height: 500px;
+  top: 0;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  padding-top: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -144,12 +146,14 @@ img {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0px 10px 10px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #A6400A;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 /* Caption text */
