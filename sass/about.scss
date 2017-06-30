@@ -1,0 +1,36 @@
+
+@import "variables";
+
+.about-section {
+  background-color: $color-text-main;
+  border-radius: $border-rad-sm;
+}
+
+.navbox {
+  background-color: $color-text-main;
+  border-radius: $border-rad-sm;
+  border: 1px solid $color-nav;
+  color: $color-nav;
+  margin-left: 10px;
+  position: fixed;
+  text-align: left;
+
+  div {
+    padding: 10px 5px 5px 5px;
+
+    &:hover {
+      background-color: $color-nav;
+    }
+
+    a {
+      color: $color-bkgd;
+      text-decoration: none;
+      font-family: $font-main;
+
+      &:hover {
+        color: $color-text-main;
+        text-decoration: none;
+      }
+    }
+  }
+}
