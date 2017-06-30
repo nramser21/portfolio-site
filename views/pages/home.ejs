@@ -1,53 +1,45 @@
-<%- contentFor('home') %>
-<div class="container carousel">
-  <div class="row">
+<%- contentFor('head') %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="/js/home.js"></script>
+  <link rel="stylesheet" href="/css/home.css">
 
-    <div class="prev col-md-1 text-center">
-      <a>&#10094;</a>
-    </div>
-
-    <div class="next col-md-offset-11 col-md-1 text-center">
-      <a>&#10095;</a>
-    </div>
-
-    <div class="slides col-md-12">
-
-      <div id="slide-1">
-        <img src="/img/space-holder-1.jpg"/>
-        <div class="text col-md-offset-1 col-md-10">
-          <p>Here is some sample text about Buzz and I. It is kinda humorous but
-            also converys that I am serious about that work I want to do and that
-            I would be really good at it</p>
+<%- contentFor('body') %>
+  <div class="container carousel">
+    <div class="row">
+      <div class="prev col-md-1 text-center">
+        <a>&#10094;</a>
+      </div>
+      <div class="next col-md-offset-11 col-md-1 text-center">
+        <a>&#10095;</a>
+      </div>
+      <div class="slides col-md-12">
+        <div id="slide-1">
+          <img src="/img/space-holder-1.jpg"/>
+          <div class="text col-md-offset-1 col-md-10">
+            <p>Here is some sample text about Buzz and I. It is kinda humorous but
+              also converys that I am serious about that work I want to do and that
+              I would be really good at it</p>
+          </div>
+        </div>
+        <div id="slide-2">
+          <img src="/img/space-holder-2.jpg">
+          <div class="text col-md-offset-1 col-md-10">
+            <p>Here is some stuff about my education</p>
+          </div>
+        </div>
+        <div id="slide-3">
+          <img src="/img/space-holder-3.jpg">
+          <div class="text col-md-offset-1 col-md-10">
+            <p>Here is some stuff about my experience</p>
+          </div>
         </div>
       </div>
-
-      <div id="slide-2">
-        <img src="/img/space-holder-2.jpg">
-        <div class="text col-md-offset-1 col-md-10">
-          <p>Here is some stuff about my education</p>
-        </div>
-      </div>
-
-      <div id="slide-3">
-        <img src="/img/space-holder-3.jpg">
-        <div class="text col-md-offset-1 col-md-10">
-          <p>Here is some stuff about my experience</p>
-        </div>
-      </div>
-
     </div>
-
-
-
-  </div>
-
-  <div class="row">
-    <div class="dots col-md-4 col-md-offset-4 text-center">
-      <span id="dot-1"></span>
-      <span id="dot-2"></span>
-      <span id="dot-3"></span>
+    <div class="row">
+      <div class="dots col-md-4 col-md-offset-4 text-center">
+        <span id="dot-1"></span>
+        <span id="dot-2"></span>
+        <span id="dot-3"></span>
+      </div>
     </div>
   </div>
-
-</div>
-<script src="/js/home.js"></script>

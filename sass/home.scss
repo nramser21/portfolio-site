@@ -1,58 +1,83 @@
+/* Styles for home page */
 
-.slides img {
-  height: 500px;
-  width: 100%;
+@import "variables";
+
+$slide-height: 500px; // Height of slideshow viewer
+
+// Use relative positioning for carousel so that prev/next buttons cane be
+// positioned absolutely
+.carousel {
+  position: relative;
+}
+
+.slides {
+  margin: 0;
+  padding: 0;
+
+  img {
+    height: $slide-height;
+    width: 100%;
+    border: $border-width solid $color-nav;
+    border-radius: $border-rad-lg;
+  }
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  height: 500px;
-  padding-top: 250px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
+  position: absolute;
+  height: $slide-height;
+  padding-top: $slide-height / 2;
   transition: 0.6s ease;
-  border-radius: 10px 0 0 10px;
+  border-radius: $border-rad-lg 0 0 $border-rad-lg;
   z-index: 2;
+
+  &:hover {
+    background-color: $color-nav;
+    opacity: 0.8;
+    text-decoration: none;
+
+    a {
+      color: $color-bkgd;
+      opacity: 1;
+    }
+  }
+
+  a {
+    color: $color-nav;
+    font-weight: bold;
+    font-size: 18px;
+
+    &:hover {
+      color: $color-bkgd;
+      text-decoration: none;
+    }
+  }
 }
 
-/* Position the "next button" to the right */
 .next {
-  border-radius: 0px 10px 10px 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #A6400A;
-  opacity: 0.8;
-  text-decoration: none;
+  border-radius: 0 $border-rad-lg $border-rad-lg 0;
 }
 
 /* Caption text */
 .text {
   background-color: rgba(255, 255, 255, 0.5);
-  color: #000428;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  color: $color-bkgd;
+  font-size: 13px;
+  font-family: $font-main;
   text-align: center;
   position: absolute;
-  bottom: 3px;
-  left: 35px;
-  width: 930px;
+  bottom: $border-width;
 }
 
-
-/* The dots/bullets/indicators */
+// Slideshow page indicators
 .dots {
   span {
     cursor:pointer;
     height: 13px;
     width: 13px;
     margin: 0 2px;
-    background-color:  #A6400A;
+    background-color:  $color-nav;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
