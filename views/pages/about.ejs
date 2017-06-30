@@ -1,6 +1,7 @@
 <%- contentFor('head') %>
 <link rel="stylesheet" href="/css/about.css">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <%- contentFor('body') %>
 
 <div class="container-fluid">
@@ -26,6 +27,7 @@
         </div>
       </div>
       <br />
+
       <div class="row">
         <div class="col-md-12 about-section">
           <h2><a name="education">My Education</a></h2>
@@ -37,9 +39,28 @@
               <img src="/img/space-holder-1.jpg" class="img-responsive">
             </div>
           </div>
+          <div class="row">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#school">Formal Education</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#independent">Independent Study</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div id="school" class="tab-pane fade in active">
+              <h4>Formal Education</h4>
+            </div>
+            <div id="independent" class="tab-pane fade in">
+              <h4>Independent Studying</h4>
+            </div>
+          </div>
         </div>
       </div>
       <br />
+
       <div class="row">
         <div class="col-md-12 about-section">
           <h2><a name="skills">My Skills</a></h2>
@@ -51,18 +72,79 @@
               <img src="/img/space-holder-1.jpg" class="img-responsive">
             </div>
           </div>
+          <div class="row">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#programming">Programming</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#software">Software Packages</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#commication">Communication</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div id="school" class="tab-pane fade in active">
+              <h4>Formal Education</h4>
+            </div>
+            <div id="independent" class="tab-pane fade in">
+              <h4>Independent Studying</h4>
+            </div>
+            <div id="communication" class="tab-pane fade in">
+              <h4>Communication</h4>
+            </div>
+          </div>
         </div>
       </div>
       <br />
+
       <div class="row">
         <div class="col-md-12 about-section">
-          <h2><a name="education">My Experience<a/></h2>
+          <h2><a name="experience">My Experience</a></h2>
           <div class="row">
             <div class="col-md-10">
               <p>Here is some stuff about my experience</p>
             </div>
             <div class="col-md-2">
               <img src="/img/space-holder-1.jpg" class="img-responsive">
+            </div>
+          </div>
+          <div class="row">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a data-toggle="tab" href="#legacy">Project Legacy</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#shell">Unix Shell</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#cra">Charles River Analytics</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#swift">Swift Fuels LLC</a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#orgs">Community Involvement</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div id="legacy" class="tab-pane fade in active">
+              <h4>Project Legacy</h4>
+            </div>
+            <div id="shell" class="tab-pane fade in">
+              <h4>Unix Shell</h4>
+            </div>
+            <div id="cra" class="tab-pane fade in">
+              <h4>Charles River Analytics Internship</h4>
+            </div>
+            <div id="swift" class="tab-pane fade in">
+              <h4>Swift Fuells LLC Internship</h4>
+            </div>
+            <div id="orgs" class="tab-pane fade in">
+              <h4>Community Involvement</h4>
             </div>
           </div>
         </div>

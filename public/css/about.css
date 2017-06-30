@@ -1,6 +1,28 @@
 .about-section {
   background-color: #828282;
   border-radius: 5px; }
+  .about-section h2 a {
+    text-decoration: none;
+    font-family: "Russo One", sans-serif;
+    color: #000428; }
+  .about-section .nav-tabs > li.active > a {
+    background-color: #A6400A;
+    color: #828282;
+    font-family: "Russo One", sans-serif;
+    outline: none; }
+    .about-section .nav-tabs > li.active > a:hover {
+      background-color: #A6400A;
+      color: #828282; }
+    .about-section .nav-tabs > li.active > a:focus {
+      outline: none; }
+  .about-section .nav-tabs > li > a {
+    background-color: #000428;
+    color: #828282;
+    font-family: "Russo One", sans-serif; }
+    .about-section .nav-tabs > li > a:hover {
+      background-color: #000428;
+      color: #A6400A;
+      font-family: "Russo One", sans-serif; }
 
 .navbox {
   background-color: #828282;

@@ -4,6 +4,40 @@
 .about-section {
   background-color: $color-text-main;
   border-radius: $border-rad-sm;
+
+  h2 a {
+    text-decoration: none;
+    font-family: $font-main;
+    color: $color-bkgd;
+  }
+
+  .nav-tabs > li.active > a, {
+    background-color: $color-nav;
+    color: $color-text-main;
+    font-family: $font-main;
+    outline: none;
+
+    &:hover {
+      background-color: $color-nav;
+      color: $color-text-main;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .nav-tabs > li > a {
+    background-color: $color-bkgd;
+    color: $color-text-main;
+    font-family: $font-main;
+
+    &:hover {
+      background-color: $color-bkgd;
+      color: $color-nav;
+      font-family: $font-main;
+    }
+  }
 }
 
 .navbox {
