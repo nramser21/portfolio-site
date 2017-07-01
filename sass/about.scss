@@ -5,6 +5,18 @@
   background-color: $color-text-main;
   border-radius: $border-rad-sm;
 
+  .pic {
+    float: right;
+    margin-top: 10px;
+    padding: 0;
+    margin: 10px;
+
+    img {
+      border: 1px solid $color-nav;
+      border-radius: $border-rad-lg;
+    }
+  }
+
   h2 a {
     text-decoration: none;
     font-family: $font-main;
