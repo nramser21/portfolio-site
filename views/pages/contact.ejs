@@ -1,0 +1,39 @@
+<%~ contentFor('head') %>
+  <script src="/js/contact.js"></script>
+  <link rel="stylesheet" href="/css/contact.css">
+
+<%~ contentFor('body') %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form>
+          <div class="form-group">
+            <label for="sender-name">Your Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="sender-name"
+              placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="sender-email">Your email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="sender-email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <div class="form-group">
+            <label for="sender-message">Message</label>
+            <input
+              type="text"
+              class="form-control"
+              id="sender-message"
+              placeholder="Enter your message"
+            />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </div> 

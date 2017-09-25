@@ -27,6 +27,7 @@ $(document).ready(() => {
     slides.eq(index).fadeIn("slow");
     dots.eq(index).css("background-color", "#A6400A");
   });
+
   $(".next").click(() => {
     slides.eq(index).hide();
     dots.eq(index).css("background-color", "rgb(130, 130, 130)");
